@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusion 2024 Registration Form</title>
+   
+</head>
+<body>
+    <h1>TechFusion 2024 Registration Form</h1>
+<form action="#" method="post">
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <br>
+   <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+   </div>
+   <br>
+   <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+   </div>
+   <br>
+   <div>
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]+" title="Please enter only numeric values" required>
+   </div>
+   <br>
+   <div>
+    <label>Profile Type:</label>
+    <input type="radio" id="professional" name="profileType"required>
+    <label for="professional">Professional</label>
+
+    <input type="radio" id="student" name="profileType" value="Student" required>
+    <label for="student">Student</label>
+
+    <input type="radio" id="enthusiast" name="profileType" value="Enthusiast" required>
+    <label for="enthusiast">Enthusiast</label>
+   </div>
+   <br>
+   <div>
+    <label for="interests">Areas of Interest:</label>
+    <select id="interests" name="interests" required>
+            <option value="" disabled selected>Select your interest</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+    </select>
+   </div>
+   <br>
+   <div>
+    <fieldset>
+        <legend>Workshops:</legend>
+        <label for="workshop1"><input type="checkbox" id="workshop1" name="workshops[]" value="Intro to Quantum Computing">Intro to Quantum Computing</label><br>
+        <label for="workshop2"><input type="checkbox" id="workshop2" name="workshops[]" value="Virtual Reality on the Web">Virtual Reality on the Web</label><br>
+        <label for="workshop3"><input type="checkbox" id="workshop3" name="workshops[]" value="Cybersecurity 101">Cybersecurity 101</label><br>
+        <label for="workshop4"><input type="checkbox" id="workshop4" name="workshops[]" value="AI in Medical Imaging">AI in Medical Imaging</label><br>
+    </fieldset>
+   </div>
+   <br>
+   <div>
+    <label for="additionalInfo">Additional Information (Max 300 characters):</label><br>
+    <textarea id="additionalInfo" name="additionalInfo" rows="4" maxlength="300"></textarea>
+   </div>
+   <br>
+   <div>
+    <fieldset>
+        <legend>Preferred Days:</legend>
+        <label for="day1"><input type="checkbox" id="day1" name="preferredDays[]" value="Day 1">Day 1</label><br>
+        <label for="day2"><input type="checkbox" id="day2" name="preferredDays[]" value="Day 2">Day 2</label><br>
+        <label for="day3"><input type="checkbox" id="day3" name="preferredDays[]" value="Day 3">Day 3</label><br>
+    </fieldset>
+   </div>
+   <br>
+   <div>
+    <fieldset>
+        <legend>Meal Preference:</legend>
+        <label for="vegetarian"><input type="radio" id="vegetarian" name="mealPreference" value="Vegetarian" required>Vegetarian</label>
+        <label for="nonVegetarian"><input type="radio" id="nonVegetarian" name="mealPreference" value="Non-Vegetarian" required>Non-Vegetarian</label>
+        <label for="vegan"><input type="radio" id="vegan" name="mealPreference" value="Vegan" required>Vegan</label>
+        <label for="noPreference"><input type="radio" id="noPreference" name="mealPreference" value="No Preference" required>No Preference</label>
+    </fieldset>
+   </div>
+   <br>
+   <div>
+    <label for="termsConditions">
+        <input type="checkbox" id="termsConditions" name="termsConditions" required>
+        I agree to the terms and conditions.
+    </label>
+   </div>
+   <br>
+   <div>
+<button type="submit">Submit</button>
+
+   </div>
+</form>
+</body>
+</html>
