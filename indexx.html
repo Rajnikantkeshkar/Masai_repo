@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 50px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .grid-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+
+        }
+        .grid-item h2{
+            position: relative;
+            left: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg" alt="Image 1">
+            <h2>Doctor Strange</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg" alt="Image 1">
+            <h2>Doctor Strange</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg" alt="Image 1">
+            <h2>Doctor Strange</h2>
+        </div>
+      
+        <div class="grid-item">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg" alt="Image 1">
+            <h2>Doctor Strange</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg" alt="Image 1">
+            <h2>Doctor Strange</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg" alt="Image 1">
+            <h2>Doctor Strange</h2>
+        </div>
+        
+    </div>
+
+</body>
+</html>
